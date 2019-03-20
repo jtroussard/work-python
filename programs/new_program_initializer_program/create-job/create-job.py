@@ -1,13 +1,13 @@
 from shutil import copy
 import os, sys, json
 
-path = "D:\\Programs\\"
-template_prog = "D:\\Programs\\Templates\\python_template.py"
+path = ".\\"
+template_prog = "..\\Templates\\python_template.py"
 directory = os.listdir(path)
 
 #OPEN JOB PROJECT NUMBER FILE
 try:
-	with open("D:\Programs\create-job\input.txt", "r") as inp:
+	with open(".\input.txt", "r") as inp:
 		input_counter = 0
 		for line in inp:
 			input_counter = int(line)
@@ -19,7 +19,7 @@ except:
 
 #CREATE JOB PROJECT FOLDER AND INITIALIZE FILES
 try:
-	with open("D:\Programs\create-job\input.txt", "w") as inp:		
+	with open(".\input.txt", "w") as inp:		
 		job_numbers = []
 		for file in directory:
 			base=os.path.basename(file)
@@ -57,7 +57,7 @@ in_desc_sel = "uninitialized-variable"
 final_string = "\n{:04d},".format(input_counter)
 
 try:
-	with open("D:\Programs\job_directory.txt", "a+") as inp:
+	with open(".\job_directory.txt", "a+") as inp:
 		db = open("D:\Programs\data_dictionaries.JSON")
 		data_dicts = json.load(db)
 		loaded_dict = {}
