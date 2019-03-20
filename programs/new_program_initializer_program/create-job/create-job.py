@@ -57,8 +57,8 @@ in_desc_sel = "uninitialized-variable"
 final_string = "\n{:04d},".format(input_counter)
 
 try:
-	with open(".\job_directory.txt", "a+") as inp:
-		db = open("D:\Programs\data_dictionaries.JSON")
+	with open("..\job_directory.txt", "a+") as inp:
+		db = open("..\data_dictionaries.JSON")
 		data_dicts = json.load(db)
 		loaded_dict = {}
 		counter = 0
