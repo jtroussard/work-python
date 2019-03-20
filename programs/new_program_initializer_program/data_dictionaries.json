@@ -1,0 +1,13 @@
+[{
+  "project types": {
+    "1": "projet",
+    "2": "non-project",
+    "3": "admin/tool",
+    "4": "other"
+  },
+  "job catagories": {
+    "1": "file processing",
+    "2": "program processing",
+    "3": "list processing"
+  }
+}]
